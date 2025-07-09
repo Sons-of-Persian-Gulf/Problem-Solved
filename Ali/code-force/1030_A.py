@@ -1,7 +1,9 @@
 n = int(input())
-arr = list(map(int, input().split()))
-for i in arr:
-    if i == 1:
-        print("HARD")
-        exit()
-print("EASY")
+s = input().split()
+is_hard = False
+
+for i in s:
+  if i == "1":
+    is_hard = True
+    break
+print("HARD" if is_hard else "EASY")
